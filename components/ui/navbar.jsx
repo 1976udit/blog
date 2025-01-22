@@ -1,4 +1,7 @@
 // components/Navbar.jsx
+"use client"
+import { Button } from "@/components/ui/button"
+
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -10,59 +13,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      <div className="logo">BlogIt</div>
-      <div className={`menu ${isOpen ? 'open' : ''}`}>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/contact">Contact</Link>
+    <nav className="bg-gray-400 text-white p-4 flex justify-between items-center backdrop-blur sticky top-0 bg-background-50">
+      <Link href='/'><div className="text-lg font-bold">BlogIt</div></Link>
+      <div className={`flex flex-col md:flex-row md:items-center md:space-x-4 ${isOpen ? 'block' : 'hidden'} md:block`}>
+        <Link href="/" className="hover:text-gray-300">Home</Link>
+        <Link href="/about" className="hover:text-gray-300">About</Link>
+        <Link href="/contact" className="hover:text-gray-300">Contact</Link>
       </div>
-      <button className="menu-toggle" onClick={toggleMenu}>
+      <button className="md:hidden text-xl" onClick={toggleMenu}>
         ☰
       </button>
-      <style jsx>{`
-        .navbar {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 1rem;
-          background-color: #333;
-          color: white;
-        }
-        .logo {
-          font-size: 1.5rem;
-          font-weight: bold;
-        }
-        .menu {
-          display: flex;
-          gap: 1rem;
-        }
-        .menu a {
-          color: white;
-          text-decoration: none;
-        }
-        .menu-toggle {
-          display: none;
-          background: none;
-          border: none;
-          color: white;
-          font-size: 1.5rem;
-        }
-        @media (max-width: 768px) {
-          .menu {
-            display: ${isOpen ? 'flex' : 'none'};
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            background-color: #333;
-            width: 100%;
-          }
-          .menu-toggle {
-            display: block;
-          }
-        }
-      `}</style>
+      <Button variant="outline" className="text-gray-400">Button</Button>
+
     </nav>
   );
 };
