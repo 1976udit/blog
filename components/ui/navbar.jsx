@@ -24,8 +24,8 @@ const Navbar = () => {
           <Link href="/blog" className="hover:text-blue-400 hover:underline transition-colors duration-300 ease-in-out">Blog</Link>
           <Link href="/contact" className="hover:text-blue-400 hover:underline transition-colors duration-300 ease-in-out">Contact</Link>
           <div className="flex items-center gap-2">
-            <Button className="mx-1 text-xs transition-colors duration-300">Sign Up</Button>
-            <Button className="mx-1 text-xs transition-colors duration-300">Login</Button>
+            <Button className="mx-1 text-blue-300 text-xs transition-colors duration-300">Sign Up</Button>
+            <Button className="mx-1 text-blue-300 text-xs transition-colors duration-300">Login</Button>
             <ModeToggle />
           </div>
         </div>
