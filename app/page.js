@@ -18,39 +18,6 @@ export default function Home() {
             <br className="hidden lg:block" /> bootstrap your new apps, projects
             or landing sites!
           </p>
-          <div className="mt-6 bg-transparent border rounded-lg dark:border-gray-700 lg:w-2/3 focus-within:border-primary focus-within:ring focus-within:ring-primary dark:focus-within:border-primary focus-within:ring-opacity-20">
-            <form
-              action="https://www.creative-tim.com/twcomponents/search"
-              className="flex flex-wrap justify-between md:flex-row"
-            >
-              <input
-                type="search"
-                name="query"
-                placeholder="Search Components"
-                required
-                className="flex-1 h-10 px-4 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none lg:h-12 dark:text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0"
-              />
-              <button
-                type="submit"
-                className="flex items-center justify-center w-full p-2 m-1 text-white transition-colors duration-300 transform rounded-lg lg:w-12 lg:h-12 lg:p-0 bg-primary hover:bg-primary/70 focus:outline-none focus:bg-primary/70"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  ></path>
-                </svg>
-              </button>
-            </form>
-          </div>
         </div>
         <div className="w-full mt-4 lg:mt-0 lg:w-1/2">
           <img
@@ -62,33 +29,45 @@ export default function Home() {
       </section>
 
       {/* // section 2 */}
-      <section className="container px-4 py-10 mx-auto">
+      <section className="container bg-gray-100 dark:bg-gray-800 px-4 py-10 mx-auto">
         <div>
-          <div className="text-center p-5">
-            <h1 className="text-3xl font-bold mb-2">Choose Your Plan</h1>
-            <p className="text-lg text-gray-600 mb-5">
+          <div className="text-center p-2">
+            <h1 className="text-3xl font-bold mb-2 text-gray-900 dark:text-white">
+              Choose Your Plan
+            </h1>
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-5">
               Find the perfect plan that fits your needs.
             </p>
           </div>
 
           <div className="flex flex-wrap justify-around p-5">
-            <div className="border border-gray-300 rounded-lg p-5 m-2 text-center flex-1 min-w-[250px] transition-transform transform hover:scale-105">
-              <h2 className="text-xl font-bold">Basic</h2>
-              <p className="text-2xl font-semibold">$10/month</p>
-              <ul className="list-disc list-inside">
+            <div className="border border-gray-300 dark:border-gray-600 rounded-lg p-5 m-2 text-center flex-1 min-w-[250px] transition-transform transform hover:scale-105">
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white">
+                Basic
+              </h2>
+              <p className="text-2xl font-semibold text-gray-900 dark:text-white">
+                $10/month
+              </p>
+              <ul className="list-disc list-inside text-gray-800 dark:text-gray-300">
                 <li>Feature 1</li>
                 <li>Feature 2</li>
                 <li>Feature 3</li>
               </ul>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded mt-4 hover:bg-blue-600">
+              <Button className="bg-blue-500 text-white py-2 px-4 rounded mt-4 hover:bg-blue-600">
                 Choose Plan
-              </button>
+              </Button>
             </div>
-            <div className="border border-blue-500  rounded-lg p-5 m-2 text-center flex-1 min-w-[250px] transition-transform transform hover:scale-105">
-              <h2 className="text-xl font-bold">Standard</h2>
-              <span className="bg-purple-500 text-white text-xs font-bold uppercase rounded-full px-2 py-1 absolute top-2 right-2 animate-pulse">Bestseller</span>
-              <p className="text-2xl font-semibold">$20/month</p>
-              <ul className="list-disc list-inside">
+            <div className="border border-blue-500 dark:border-blue-700 rounded-lg p-5 m-2 text-center flex-1 min-w-[250px] transition-transform transform hover:scale-105">
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white">
+                Standard
+              </h2>
+              <span className="bg-purple-500 text-white text-xs font-bold uppercase rounded-full px-2 py-1 absolute top-2 right-2 animate-pulse">
+                Bestseller
+              </span>
+              <p className="text-2xl font-semibold text-gray-900 dark:text-white">
+                $20/month
+              </p>
+              <ul className="list-disc list-inside text-gray-800 dark:text-gray-300">
                 <li>Feature 1</li>
                 <li>Feature 2</li>
                 <li>Feature 3</li>
@@ -98,10 +77,14 @@ export default function Home() {
                 Choose Plan
               </Button>
             </div>
-            <div className="border border-gray-300 rounded-lg p-5 m-2 text-center flex-1 min-w-[250px] transition-transform transform hover:scale-105">
-              <h2 className="text-xl font-bold">Premium</h2>
-              <p className="text-2xl font-semibold">$30/month</p>
-              <ul className="list-disc list-inside">
+            <div className="border border-gray-300 dark:border-gray-600 rounded-lg p-5 m-2 text-center flex-1 min-w-[250px] transition-transform transform hover:scale-105">
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white">
+                Premium
+              </h2>
+              <p className="text-2xl font-semibold text-gray-900 dark:text-white">
+                $30/month
+              </p>
+              <ul className="list-disc list-inside text-gray-800 dark:text-gray-300">
                 <li>Feature 1</li>
                 <li>Feature 2</li>
                 <li>Feature 3</li>
@@ -113,9 +96,133 @@ export default function Home() {
               </Button>
             </div>
           </div>
-
         </div>
       </section>
+
+      {/* Blog section  */}
+      <section className="py-10 dark:bg-gray-800">
+        <h2 className="text-3xl font-bold text-center mb-6 text-gray-900 dark:text-white">
+          Top Blogs
+        </h2>
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 dark:bg-gray-700 flex flex-col items-center">
+            <img
+              src="https://images.pexels.com/photos/5473956/pexels-photo-5473956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Blog 1"
+              className="rounded-t-lg mb-4 h-48"
+            />
+            <h3 className="text-l font-semibold mb-2 text-gray-900 dark:text-white text-center">
+              Understanding React Hooks
+            </h3>
+            <p className="text-gray-600 mb-4 dark:text-gray-300 text-center">
+              A deep dive into React Hooks and how to use them effectively.
+            </p>
+            <span className="text-gray-500 text-sm dark:text-gray-400">
+              March 15, 2023
+            </span>
+            <div className="mt-4">
+              <Button className="bg-blue-500 text-white py-2 px-4 rounded mt-4 hover:bg-blue-600">
+                Read More
+              </Button>
+            </div>
+          </div>
+          <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 dark:bg-gray-700 flex flex-col items-center">
+            <img
+              src="https://images.pexels.com/photos/693859/pexels-photo-693859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Blog 2"
+              className="rounded-t-lg mb-4 h-48"
+            />
+            <h3 className="text-l font-semibold mb-2 text-gray-900 dark:text-white text-center">
+              CSS Grid vs Flexbox
+            </h3>
+            <p className="text-gray-600 mb-4 dark:text-gray-300 text-center">
+              Comparing CSS Grid and Flexbox for layout design.
+            </p>
+            <span className="text-gray-500 text-sm dark:text-gray-400">
+              April 10, 2023
+            </span>
+            <div className="mt-4">
+              <Button className="bg-blue-500 text-white py-2 px-4 rounded mt-4 hover:bg-blue-600">
+                Read More
+              </Button>
+            </div>
+          </div>
+          <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 dark:bg-gray-700 flex flex-col items-center">
+            <img
+              src="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg"
+              alt="Blog 3"
+              className="rounded-t-lg mb-4 h-48"
+            />
+            <h3 className="text-l font-semibold mb-2 text-gray-900 dark:text-white text-center">
+              JavaScript ES2023 Features
+            </h3>
+            <p className="text-gray-600 mb-4 dark:text-gray-300 text-center">
+              Exploring the new features introduced in ES2023.
+            </p>
+            <span className="text-gray-500 text-sm dark:text-gray-400">
+              May 5, 2023
+            </span>
+            <div className="mt-4">
+              <Button className="bg-blue-500 text-white py-2 px-4 rounded mt-4 hover:bg-blue-600">
+                Read More
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Third section  */}
+      <footer className="bg-gray-800 text-white py-8 dark:bg-gray-900 dark:text-gray-200">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-4 md:mb-0">
+              <h3 className="text-lg font-bold">Contact Us</h3>
+              <p>Email: info@example.com</p>
+              <p>Phone: (123) 456-7890</p>
+            </div>
+            <div className="flex space-x-4">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform transition-transform duration-300 hover:scale-110 dark:hover:text-blue-500"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform transition-transform duration-300 hover:scale-110 dark:hover:text-blue-400"
+              >
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform transition-transform duration-300 hover:scale-110 dark:hover:text-pink-500"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform transition-transform duration-300 hover:scale-110 dark:hover:text-blue-600"
+              >
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div className="text-center mt-4">
+            <p className="text-sm">
+              &copy; {new Date().getFullYear()} Your Company Name. All rights
+              reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
