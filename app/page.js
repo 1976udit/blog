@@ -84,8 +84,9 @@ export default function Home() {
                 Choose Plan
               </button>
             </div>
-            <div className="border border-gray-300 bg-blue-50 rounded-lg p-5 m-2 text-center flex-1 min-w-[250px] transition-transform transform hover:scale-105">
+            <div className="border border-blue-500  rounded-lg p-5 m-2 text-center flex-1 min-w-[250px] transition-transform transform hover:scale-105">
               <h2 className="text-xl font-bold">Standard</h2>
+              <span className="bg-purple-500 text-white text-xs font-bold uppercase rounded-full px-2 py-1 absolute top-2 right-2 animate-pulse">Bestseller</span>
               <p className="text-2xl font-semibold">$20/month</p>
               <ul className="list-disc list-inside">
                 <li>Feature 1</li>
@@ -112,6 +113,7 @@ export default function Home() {
               </Button>
             </div>
           </div>
+
         </div>
       </section>
     </main>
