@@ -3,7 +3,8 @@
     author: "John Doe"
     description: "This is about the advancement in the Internet of Things"
     date: "2023-10-01"
-    slug: "first-blog-post"
+    comment: "Great article! Very informative."
+    slug: "Advance-iot"
     image:
       "https://images.pexels.com/photos/5473956/pexels-photo-5473956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 

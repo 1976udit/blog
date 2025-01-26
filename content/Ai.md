@@ -3,7 +3,8 @@
     author: "Jane Smith"
     description: "This is about the new developing technology AI and its uses."
     date: "2023-10-02"
-    slug: "second-blog-post"
+    comment : "Great article! Very informative."
+    slug: "Ai"
     image:
       "https://images.pexels.com/photos/693859/pexels-photo-693859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 ---
