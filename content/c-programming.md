@@ -26,15 +26,7 @@ C is known for its simplicity and efficiency. Some of its key features include:
 Here's a simple C program that prints "Hello, World!" to the console:
 
 ```c
-#include <stdio.h>
 
-int main() {
-    printf("Hello, World!\n");
-    return 0;
-}
-
-
-```c
 #include <stdio.h>
 
 int main() {

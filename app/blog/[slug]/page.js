@@ -7,6 +7,8 @@ import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
+import rehypePrettyCode from "rehype-pretty-code";
+import { transformerCopyButton } from "@rehype-pretty/transformers";
 export default async function Page({ params }) {
 
     const filepath = `./content/${params.slug}.md`;
@@ -23,7 +25,16 @@ export default async function Page({ params }) {
       .use(remarkRehype)
       .use(rehypeDocument, { title: "👋🌍" })
       .use(rehypeFormat)
-      .use(rehypeStringify)
+      .use(rehypePrettyCode, {
+        theme: "github-dark",
+        transformers: [
+          transformerCopyButton({
+            visibility: "always",
+            feedbackDuration: 3_000,
+          }),
+        ],
+      })
+      .use(rehypeStringify);
 
     const htmlcontent = (await processor.process(content)).toString();
 
@@ -42,7 +53,7 @@ export default async function Page({ params }) {
   </p>
   <div
     dangerouslySetInnerHTML={{ __html: htmlcontent }}
-    className="prose dark:prose-dark"
+    className="prose dark:prose-invert"
   ></div>
   <div className="mt-8">
     <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Comments</h2>
