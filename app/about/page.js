@@ -1,21 +1,41 @@
+import React from 'react'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
-export default function About() {
+const About = () => {
   return (
-   <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
-  <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200">About Us</h1>
-  <p className="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-2xl text-center">
-    We are a team of passionate developers dedicated to building amazing web applications.
-    Our mission is to create user-friendly and efficient solutions that meet the needs of our clients.
-  </p>
-  <div className="mt-8">
-    <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Our Values</h2>
-    <ul className="mt-4 list-disc list-inside text-gray-600 dark:text-gray-400">
-      <li>Innovation</li>
-      <li>Collaboration</li>
-      <li>Integrity</li>
-      <li>Excellence</li>
-    </ul>
-  </div>
-</div>
+    <div className="max-w-screen-md mx-auto">
+      <Carousel className="relative">
+        <CarouselContent className="overflow-hidden flex">
+          <CarouselItem className="flex justify-center items-center flex-shrink-0 w-full">
+            <img
+              className="w-full h-1/2-screen object-cover"
+              src="https://images.pexels.com/photos/25384797/pexels-photo-25384797/free-photo-of-rugged-rocks-of-the-ocean-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+          </CarouselItem>
+          <CarouselItem className="flex justify-center items-center flex-shrink-0 w-full">
+            <img
+              className="w-full h-1/2-screen object-cover"
+              src="https://images.pexels.com/photos/25384797/pexels-photo-25384797/free-photo-of-rugged-rocks-of-the-ocean-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+          </CarouselItem>
+          <CarouselItem className="flex justify-center items-center flex-shrink-0 w-full">
+            <img
+              className="w-full h-1/2-screen object-cover"
+              src="https://images.pexels.com/photos/25384797/pexels-photo-25384797/free-photo-of-rugged-rocks-of-the-ocean-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+          </CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700" />
+        <CarouselNext className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700" />
+      </Carousel>
+    </div>
   );
 }
+
+export default About
