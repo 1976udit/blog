@@ -16,25 +16,25 @@ import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
-   
+
   const [progress, setProgress] = useState(0)
   const pathname = usePathname()
-   useEffect(() => {
-     setProgress(30)
-     setTimeout(() => {
-        setProgress(70)
-      },100)
-      setTimeout(() => {
-        setProgress(100)
-      },400)
-   }, [pathname])
+  useEffect(() => {
+    setProgress(30)
+    setTimeout(() => {
+      setProgress(70)
+    }, 100)
+    setTimeout(() => {
+      setProgress(100)
+    }, 400)
+  }, [pathname])
 
-   useEffect(() => {
-     setTimeout(() => {
-       setProgress(0)
-     }, 600)
-   }, [])
-  
+  useEffect(() => {
+    setTimeout(() => {
+      setProgress(0)
+    }, 600)
+  }, [])
+
 
   return (
     <nav className="p-4 flex justify-between sticky top-0 border-b backdrop-blur-md z-10">
@@ -49,7 +49,7 @@ const Navbar = () => {
           <Link href="/" className=" hover:scale-110 transition-transform duration-300 hover:semi-bold">Home</Link>
           <Link href="/about" className=" hover:scale-110 transition-transform duration-300 hover:semi-bold">About</Link>
           <Link href="/blog" className="hover:scale-110 transition-transform duration-300 hover:semi-bold">Blog</Link>
-          <Link href="/contact" className="hover:scale-110 transition-transform duration-300 hover:semi-bold">Contact</Link>
+          <Link href="/login" className="hover:scale-110 transition-transform duration-300 hover:semi-bold">Contact</Link>
           <div className="flex items-center gap-2">
             <Button className="bg-purple-400 mx-1 text-xs transition-colors duration-300">Sign Up</Button>
             <Button className="bg-purple-400 mx-1 text-xs transition-colors duration-300">Login</Button>
