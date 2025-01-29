@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Typed from "typed.js";
 import React from "react";
 
+
 export default function Home() {
   const el = React.useRef(null);
   React.useEffect(() => {
@@ -27,8 +28,7 @@ export default function Home() {
       <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
         <div className="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">
           <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
-            A <span className="font-semibold">free source</span> for
-            community
+            A <span className="font-semibold">free source</span> for community
             <br className="hidden lg:block" /> components using{" "}
             <span className="font-semibold underline decoration-primary">
               <span ref={el} />
@@ -192,14 +192,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Third section  */}
-      <footer className="bg-gray-800 text-white py-8 dark:bg-gray-900 dark:text-gray-200">
+      {/* footer section */}
+      <footer className="bg-gray-800 text-white py-8 dark:bg-gray-900 dark:text-gray-200 w-full">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <h3 className="text-lg font-bold">Contact Us</h3>
-              <p>Email: info@example.com</p>
-              <p>Phone: (123) 456-7890</p>
+              <p>Email: udit007tyagi@gmail.com</p>
+              <p>Phone: (+91) 9650310831</p>
             </div>
             <div className="flex space-x-4">
               <a

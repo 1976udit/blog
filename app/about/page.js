@@ -10,30 +10,13 @@ import {
 const About = () => {
   return (
     <div className="max-w-screen-md mx-auto">
-      <Carousel className="relative">
-        <CarouselContent className="overflow-hidden flex">
-          <CarouselItem className="flex justify-center items-center flex-shrink-0 w-full">
-            <img
-              className="w-full h-1/2-screen object-cover"
-              src="https://images.pexels.com/photos/25384797/pexels-photo-25384797/free-photo-of-rugged-rocks-of-the-ocean-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            />
-          </CarouselItem>
-          <CarouselItem className="flex justify-center items-center flex-shrink-0 w-full">
-            <img
-              className="w-full h-1/2-screen object-cover"
-              src="https://images.pexels.com/photos/25384797/pexels-photo-25384797/free-photo-of-rugged-rocks-of-the-ocean-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            />
-          </CarouselItem>
-          <CarouselItem className="flex justify-center items-center flex-shrink-0 w-full">
-            <img
-              className="w-full h-1/2-screen object-cover"
-              src="https://images.pexels.com/photos/25384797/pexels-photo-25384797/free-photo-of-rugged-rocks-of-the-ocean-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            />
-          </CarouselItem>
-        </CarouselContent>
-        <CarouselPrevious className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700" />
-        <CarouselNext className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700" />
-      </Carousel>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
     </div>
   );
 }
