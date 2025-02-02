@@ -36,7 +36,7 @@ export default function Home() {
           </h1>
           <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
             Open source platform for blogs and templates to
-            <br className="hidden lg:block" /> work on your new concepts, projects
+            <br className="hidden lg:block" /> work on new concepts, projects
             or ideas!
           </p>
         </div>
