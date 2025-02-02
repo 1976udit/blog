@@ -9,14 +9,19 @@ import {
 
 const About = () => {
   return (
-    <div className="max-w-screen-md mx-auto">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+      <div className="bg-white shadow-lg rounded-lg p-6 max-w-md w-full transform transition duration-500 hover:scale-105">
+        <h1 className="text-2xl font-bold text-gray-800 mb-4">About Us</h1>
+        <p className="text-gray-600 mb-4">
+          We are a team of passionate developers dedicated to building
+          high-quality web applications. Our mission is to deliver exceptional
+          digital experiences that empower users and drive business success.
+        </p>
+        <p className="text-gray-600">
+          Our expertise spans across various technologies, and we are committed
+          to continuous learning and improvement.
+        </p>
+      </div>
     </div>
   );
 }

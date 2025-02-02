@@ -1,8 +1,10 @@
 "use client"
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
- const ContactUs = () => {
+const ContactUs = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -14,16 +16,24 @@ import emailjs from "@emailjs/browser";
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          toast.success("Email sent successfully!", {
+            position: "top-right",
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          toast("Failed to send email.");
         }
       );
   };
 
   return (
-   <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold text-center mb-6 animate-bounce dark:text-white">
         Contact Us
       </h1>
@@ -58,6 +68,7 @@ import emailjs from "@emailjs/browser";
           </button>
         </div>
       </form>
+      <ToastContainer />
     </div>
   );
 };
