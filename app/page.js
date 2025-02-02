@@ -35,9 +35,9 @@ export default function Home() {
             </span>
           </h1>
           <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
-            Open source Tailwind UI components and templates to
-            <br className="hidden lg:block" /> bootstrap your new apps, projects
-            or landing sites!
+            Open source platform for blogs and templates to
+            <br className="hidden lg:block" /> work on your new concepts, projects
+            or ideas!
           </p>
         </div>
         <div className="w-full mt-4 lg:mt-0 lg:w-1/2">
@@ -141,11 +141,11 @@ export default function Home() {
             <span className="text-gray-500 text-sm dark:text-gray-400">
               March 15, 2023
             </span>
-            <div className="mt-4">
+            {/* <div className="mt-4">
               <Button className="bg-blue-500 text-white py-2 px-4 rounded mt-4 hover:bg-blue-600">
                 Read More
               </Button>
-            </div>
+            </div> */}
           </div>
           <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 dark:bg-gray-700 flex flex-col items-center">
             <img
@@ -162,11 +162,11 @@ export default function Home() {
             <span className="text-gray-500 text-sm dark:text-gray-400">
               April 10, 2023
             </span>
-            <div className="mt-4">
+            {/* <div className="mt-4">
               <Button className="bg-blue-500 text-white py-2 px-4 rounded mt-4 hover:bg-blue-600">
                 Read More
               </Button>
-            </div>
+            </div> */}
           </div>
           <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 dark:bg-gray-700 flex flex-col items-center">
             <img
@@ -183,11 +183,11 @@ export default function Home() {
             <span className="text-gray-500 text-sm dark:text-gray-400">
               May 5, 2023
             </span>
-            <div className="mt-4">
+            {/* <div className="mt-4">
               <Button className="bg-blue-500 text-white py-2 px-4 rounded mt-4 hover:bg-blue-600">
                 Read More
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

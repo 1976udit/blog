@@ -8,6 +8,13 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
 import { Button } from "@/components/ui/button"
 import Link from 'next/link';
 import { ModeToggle } from "../theme-btn";
@@ -50,10 +57,20 @@ const Navbar = () => {
           <Link href="/about" className=" hover:scale-110 transition-transform duration-300 hover:semi-bold">About</Link>
           <Link href="/blog" className="hover:scale-110 transition-transform duration-300 hover:semi-bold">Blog</Link>
           <Link href="/contact" className="hover:scale-110 transition-transform duration-300 hover:semi-bold">Contact</Link>
-          <div className="flex items-center gap-2">
-            {/* <Button className="bg-purple-400 mx-1 text-xs transition-colors duration-300">Sign Up</Button>
-            <Button className="bg-purple-400 mx-1 text-xs transition-colors duration-300">Login</Button> */}
+          <div className="flex items-center gap-3 dark:bg-black dark:text-white  justify-center">
             <ModeToggle />
+            <ClerkProvider>
+              <div>
+                <div>
+                  <SignedOut>
+                    <SignInButton />
+                  </SignedOut>
+                  <SignedIn>
+                    <UserButton />
+                  </SignedIn>
+                </div>
+              </div>
+            </ClerkProvider>
           </div>
         </div>
 

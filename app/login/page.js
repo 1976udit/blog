@@ -1,25 +1,10 @@
 import React from 'react'
 
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
 
-const page = () => {
+const Account = () => {
   return (
-    <ClerkProvider>
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-          {children}
-    </ClerkProvider>
+   <div></div>
   );
 }
 
-export default page
+export default Account
